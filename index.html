@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+
+  <style>
+
+      body {
+        background-image: url('assets/homepage bg.png');
+        background-color:#000000; 
+        background-repeat: no-repeat;
+        background-position: 30px center;
+        background-size: 1210px;">
+        background-attachment: fixed;
+      }
+
+      .about {
+        margin-top:225px;
+        margin-left:17px;
+        margin-right:235px;
+      }
+
+
+    .parent {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    .buttonimg {
+      position: relative;
+    }
+
+    .junkyard {
+      position: absolute;
+      top: 100px;
+      left: 490px;
+      animation: animate 5s linear infinite;
+    }
+
+    .welcome {
+      position: absolute;
+      top: 38px;
+      left: 360px;
+      animation: animate 5s linear infinite;
+    }
+
+     @keyframes animate { 
+            0% { 
+                transform: rotate(5deg); 
+            } 
+  
+            25% { 
+                transform: rotate(0deg); 
+            } 
+  
+            50% { 
+                transform: rotate(-5deg); 
+            } 
+  
+            75% { 
+                transform: rotate(0deg); 
+            } 
+  
+            100% { 
+                transform: rotate(5deg); 
+            } 
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { ... }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+  </style>
+
+  </head>
+
+  <body>
+
+      <div class="parent">
+        <a href="about.html" target="_self">
+          <img class="about" src="assets/desk4.png" alt="about page" height="434"/></a>      
+     
+        <a href="stuff.html" target="_self">
+          <img class="buttonimg" src="assets/stuff4.png" alt="www.twitter.com" height="684"/></a>
+     
+        <img class="junkyard" src="assets/thejunkyard.png" alt="titleimg" height="250">
+
+        <img class="welcome" src="assets/welcometo.png" alt="titleimg" height="140">
+
+       </div>
+
+  </body>
+</html>
